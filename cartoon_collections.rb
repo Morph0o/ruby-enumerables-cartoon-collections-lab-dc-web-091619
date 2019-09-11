@@ -13,20 +13,22 @@ def summon_captain_planet(array)
 end
 
 def long_planeteer_calls(array)
- array.each {|a| if a.length >4
- return true  
- end}
- return false
+  array.each do |a| 
+    if a.length >4
+      return true  
+    end 
+  end
+  return false
 end
 
 def find_the_cheese(array)
   cheese_types = ["cheddar", "gouda", "camembert"]
   found = cheese_types.find{|c| array.include?(c)}
-if found
-  return found
-else
-  return nil
-end
+  if found
+    return found
+  else
+    return nil
+  end
 end
 
 
